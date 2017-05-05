@@ -35,3 +35,13 @@ body {
 	padding: 6px 0px;
 	font-size: 24px;
 }
+
+.panel-heading .accordion-toggle:after {
+    font-family: 'Glyphicons Halflings';
+    content: "\e082";
+    float: right;
+}
+
+.panel-heading .accordion-toggle.collapsed:after {
+    content: "\e081";
+}

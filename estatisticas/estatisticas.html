@@ -18,15 +18,10 @@
         <div class="col-xs-12">
           <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
             <div class="panel panel-default">
-            <div class="panel-heading row" role="tab" id="headingOne" onclick="toggleIcon(this)">
-              <div class="col-xs-11">
-                <h4 class="panel-title">
-                	<a role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span> RANKINGS <strong>CLUBE</strong></a>
-                </h4>
-              </div>
-              <div class="col-xs-1">
-                <span class="glyphicon glyphicon-minus-sign pull-right" aria-hidden="true"></span>
-              </div>
+            <div class="panel-heading row" role="tab" id="headingOne">
+              <h4 class="panel-title">
+              	<a class="accordion-toggle collapsed" role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span> RANKINGS <strong>CLUBE</strong></a>
+              </h4>
             </div>
             <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
               <div class="panel-body">
@@ -35,14 +30,9 @@
             </div>
             <div class="panel panel-default">
             <div class="panel-heading row" role="tab" id="headingTwo">
-              <div class="col-xs-11">
-                <h4 class="panel-title">
-                	<a class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span> RANKINGS <strong>INDIVIDUAIS</strong></a>
-                </h4>
-              </div>
-              <div class="col-xs-1">
-                <span class="glyphicon glyphicon-minus-sign pull-right" aria-hidden="true"></span>
-              </div>
+              <h4 class="panel-title">
+              	<a class="accordion-toggle" role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span> RANKINGS <strong>INDIVIDUAIS</strong></a>
+              </h4>
             </div>
             <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
               <div class="panel-body">
@@ -51,14 +41,9 @@
             </div>
             <div class="panel panel-default">
             <div class="panel-heading row" role="tab" id="headingThree">
-              <div class="col-xs-11">
-                <h4 class="panel-title">
-                	<a class="collapsed" role="button" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span> DADOS <strong>GERAIS</strong></a>
-                </h4>
-              </div>
-              <div class="col-xs-1">
-                <span class="glyphicon glyphicon-minus-sign pull-right" aria-hidden="true"></span>
-              </div>
+              <h4 class="panel-title">
+              	<a class="accordion-toggle" role="button" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span> DADOS <strong>GERAIS</strong></a>
+              </h4>
             </div>
             <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
               <div class="panel-body">
@@ -75,6 +60,6 @@
     <!-- Bootstrap -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Script -->
-    <script src="js/estatistica.js"></script>
+    <script src="js/estatisticas.js"></script>
   </body>
 </html>
