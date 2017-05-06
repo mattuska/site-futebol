@@ -45,3 +45,8 @@ body {
 .panel-heading .accordion-toggle.collapsed:after {
     content: "\e081";
 }
+
+.glyphicon.glyphicon-dot:before {
+    content: "\25cf";
+    font-size: 1.5em;
+}
