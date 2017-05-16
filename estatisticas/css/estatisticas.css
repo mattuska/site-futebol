@@ -8,20 +8,26 @@
 	margin-bottom: 30px;
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
-	border-radius: 0x;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
 	border: none;
 }
 
 .statstics .panel-default {
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
-	border-radius: 0x;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
 	border: none;
 }
 
 .statistics .panel-default > .panel-heading {
 	background-color: #ffd807;
 	background-image: none;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
 	border-radius: 0px;
@@ -72,7 +78,8 @@
 	padding-right: 25px;
 }
 
-.statistics .frame-ranking .title {
+.statistics .frame-ranking .title,
+.statistics .tab-elencos .title {
 	border-top: 1px solid #E0E0E0;
     border-bottom: 1px solid #E0E0E0;
     text-transform: uppercase;
@@ -84,12 +91,19 @@
     padding-bottom: 6px;
 }
 
-.statistics .frame-ranking .title i {
+.statistics .tab-elencos .title {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.statistics .frame-ranking .title i,
+.statistics .tab-elencos .title i {
 	color: #ffd807;
 }
 
 .statistics .frame-ranking .title-info,
-.statistics .frame-ranking .title-info.first-line {
+.statistics .frame-ranking .title-info.first-line,
+.statistics .tab-elencos .title-info {
     font-size: 10px;
     text-transform: capitalize;
     float: right;
@@ -101,9 +115,29 @@
 	bottom: 10px
 }
 
-.statistics .frame-ranking .title-info.one-line {
+.statistics .frame-ranking .title-info.one-line,
+.statistics .tab-elencos .title-info.one-line {
     position: relative;
     top: 7px;
+}
+
+.statistics .tab-elencos .iterator .backward {
+	margin-right: 50px;
+	color: #9e9e9e;
+}
+
+.statistics .tab-elencos .iterator .forward {
+	margin-left: 50px;
+	color: #9e9e9e;
+}
+
+.statistics .tab-elencos .iterator .has-more {
+	color: #64DD17;
+}
+
+.statistics .tab-elencos .iterator span {
+	font-size: 0.7em;
+    font-weight: normal;
 }
 
 .statistics .frame-ranking table thead tr th {
@@ -129,7 +163,8 @@
     background-color: #F5F5F5;
 }
 
-.statistics .frame-ranking .destaque-jogador td {
+.statistics .frame-ranking .destaque-jogador td,
+.statistics .tab-elencos table.team .destaque-jogador {
 	background-color: #ffd807;
 	border-color: #fed100;
 }
@@ -142,8 +177,9 @@
 	background-color: #fed100;
 }
 
-.statistics .frame-ranking .media img.media-object {
-    width: 165px;
+.statistics .frame-ranking .media img.media-object,
+.statistics .tab-elencos .frame-player .media img.media-object {
+    width: 150px;
     margin-left: 5px;
 }
 
@@ -209,4 +245,134 @@
 .statistics .kept,
 .statistics .tie {
 	color: #9e9e9e;
+}
+
+.statistics .panel-dados-gerais .nav-pills li a {
+    width: 80px;
+    height: 60px;
+    font-size: 40px;
+    padding: 2px;
+    background-color: #212121;
+    color: #fff;
+    -webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+
+.statistics .panel-dados-gerais .nav-pills li a:hover {
+	background-color: #212121;
+}
+
+.statistics .panel-dados-gerais .nav-pills li a:active {
+	background-color: #424242;
+}
+
+.statistics .panel-dados-gerais .nav-pills li.active a {
+	background-color: #ffd807;
+}
+
+.statistics .panel-dados-gerais .nav-pills li a.first-tab {
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.statistics .panel-dados-gerais .nav-pills li.first-tab a {
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.statistics .panel-dados-gerais .nav-pills li.last-tab a {
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.statistics .panel-dados-gerais .nav-pills li span {
+	text-transform: uppercase;
+	font-size: 0.7em;
+    font-weight: bold;
+}
+
+.statistics .tab-elencos .frame-player .player-position {
+	font-size: 1em;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #9e9e9e;
+    display: block;
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+
+.statistics .tab-elencos .frame-player .username-psn {
+	font-size: 23px;
+}
+ .statistics .tab-elencos .frame-player .criterion {
+ 	font-size: 14px;
+ }
+
+ .statistics .tab-elencos .frame-player .amount,
+ .statistics .tab-elencos .frame-player .featured {
+ 	background-color: #f5f5f5;
+ }
+
+ .statistics .tab-elencos .frame-player .featured {
+    padding: 5px;
+}
+
+.statistics .tab-elencos table.team {
+	margin-top: 20px;
+}
+
+.statistics .tab-elencos table.team thead {
+	text-transform: uppercase;
+    color: #9e9e9e;
+    border-top: 2px solid #e0e0e0;
+    font-size: 10px;
+}
+
+.statistics .tab-elencos table.team thead th {
+	padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.statistics .tab-elencos table.team tbody tr td {
+	border-top: 1px solid #f5f5f5;
+}
+
+.statistics .tab-elencos table.team .player-position {
+	font-weight: bold;
+	color: #9e9e9e;
+	text-transform: uppercase;
+}
+
+.statistics .tab-elencos table.team .player-name {
+	font-weight: bold;
+}
+
+.statistics .tab-elencos .criterions h5 {
+	font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.statistics .tab-elencos .criterions table tr th,
+.statistics .tab-elencos .criterions table tr td {
+	padding-top: 14px;
+	padding-bottom: 14px;
+}
+
+.statistics .tab-elencos .criterions table .amount {
+	font-weight: bold;
 }
