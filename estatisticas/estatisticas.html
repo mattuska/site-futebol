@@ -600,8 +600,8 @@
                   <div>
                     <ul class="nav nav-pills" role="tablist">
                       <li role="presentation" class="first-tab"><a href="#elencos" aria-controls="elencos" role="tab" data-toggle="tab"><i class="fa fa-shield" aria-hidden="true"></i></a><span>Elencos</span></li>
-                      <li role="presentation" class="active"><a href="#tabela" aria-controls="tabela" role="tab" data-toggle="tab"><i class="fa fa-exchange" aria-hidden="true"></i></a><span>Tabela</span></li>
-                      <li role="presentation" class="last-tab"><a href="#estatisticas" aria-controls="estatisticas" role="tab" data-toggle="tab"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></a><span>Estatísticas</span></li>
+                      <li role="presentation"><a href="#tabela" aria-controls="tabela" role="tab" data-toggle="tab"><i class="fa fa-exchange" aria-hidden="true"></i></a><span>Tabela</span></li>
+                      <li role="presentation" class="last-tab active"><a href="#estatisticas" aria-controls="estatisticas" role="tab" data-toggle="tab"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></a><span>Estatísticas</span></li>
                     </ul>
                     <div class="tab-content">
                       <div role="tabpanel" class="tab-elencos tab-pane fade" id="elencos">
@@ -792,7 +792,7 @@
                           </div>
                         </div>
                       </div>
-                      <div role="tabpanel" class="tab-tabela tab-pane fade in active" id="tabela">
+                      <div role="tabpanel" class="tab-tabela tab-pane fade" id="tabela">
                         <div class="row">
                           <div class="col-xs-8">
                             <table class="table championship">
@@ -1086,13 +1086,13 @@
                           </div>
                         </div>
                       </div>
-                      <div role="tabpanel" class="tab-pane fade" id="estatisticas">
-                        <div class="row title">
-                          <div class="col-xs-6">
-                            <h4><i class="fa fa-bars" aria-hidden="true"></i> Ladrões de Bola</h4>
-                          </div>
-                          <div class="col-xs-6">
-                            <p></p>
+                      <div role="tabpanel" class="tab-estatisticas tab-pane fade in active" id="estatisticas">
+                        <div class="row">
+                          <div class="col-xs-12">
+                            <h4 class="title">
+                              <i class="fa fa-bars" aria-hidden="true"></i> Ladrões de Bola
+                              <span class="title-info one-line">Interceptações [+] Roubadas de bola</span>
+                            </h4>
                           </div>
                         </div>
                         <div class="row">
@@ -1107,38 +1107,31 @@
                                 <table class="table">
                                   <thead>
                                     <tr>
-                                      <th colspan="2">Bruno Barreto<span>Barreto_95</span></th>
+                                      <th colspan="2"><span class="playername">Bruno Barretto</span><span class="username-psn">Barretto_95</span></th>
                                     </tr>
                                   </thead>
                                   <tbody>
                                     <tr>
-                                      <td>Interceptações</td>
-                                      <td>231</td>
+                                      <td class="criterion">Interceptações</td>
+                                      <td class="amount text-center">231</td>
                                     </tr>
                                     <tr>
-                                      <td>Roubadas</td>
-                                      <td>57</td>
+                                      <td class="criterion">Roubadas</td>
+                                      <td class="amount text-center">57</td>
                                     </tr>
                                   </tbody>
-                                  <tfoot>
-                                    <tr>
-                                      <td>Total Roubadas de Bola</td>
-                                      <td>382</td>
-                                    </tr>
-                                  </tfoot>
                                 </table>
+                                <div class="featured">
+                                  <span class="criterion">Total Roubadas de Bola</span>
+                                  <span class="amount text-center">382</span>
+                                </div>
                               </div>
                             </div>
                           </div>
                           <div class="col-xs-6">
                             <div class="media">
                               <div class="media-body">
-                                <h4 class="media-heading">Comparação do Torneio</h4>
-                                <ul class="list-inline">
-                                  <li><i class="fa fa-square" aria-hidden="true"></i><span> Player</span></li>
-                                  <li><i class="fa fa-square" aria-hidden="true"></i><span> League Avg.</span></li>
-                                </ul>
-                                <div></div>
+                                <div>* Gráfico</div>
                               </div>
                               <div class="media-right">
                                 <a href="#">
@@ -1148,8 +1141,8 @@
                             </div>
                           </div>
                         </div>
-                        <div class="row">
-                          <div class="col-xs-4">
+                        <div class="row frames">
+                          <div class="col-xs-4 frame-ranking">
                             <table class="table">
                               <thead>
                                 <tr>
@@ -1190,15 +1183,9 @@
                                   <td>5</td>
                                 </tr>
                               </tbody>
-                              <tfoot>
-                                <tr>
-                                  <td colspan="2"><i class="fa fa-caret-left" aria-hidden="true"></i></td>
-                                  <td colspan="2"><i class="fa fa-caret-right" aria-hidden="true"></i></td>
-                                </tr>
-                              </tfoot>
                             </table>
                           </div>
-                          <div class="col-xs-4">
+                          <div class="col-xs-4 frame-ranking">
                             <table class="table">
                               <thead>
                                 <tr>
@@ -1239,15 +1226,9 @@
                                   <td>5</td>
                                 </tr>
                               </tbody>
-                              <tfoot>
-                                <tr>
-                                  <td colspan="2"><i class="fa fa-caret-left" aria-hidden="true"></i></td>
-                                  <td colspan="2"><i class="fa fa-caret-right" aria-hidden="true"></i></td>
-                                </tr>
-                              </tfoot>
                             </table>
                           </div>
-                          <div class="col-xs-4">
+                          <div class="col-xs-4 frame-ranking">
                             <table class="table">
                               <thead>
                                 <tr>
@@ -1263,7 +1244,7 @@
                                   <td><strong>6</strong></td>
                                   <td>5</td>
                                 </tr>
-                                <tr>
+                                <tr class="destaque-jogador">
                                   <td><strong>6º Danilojosino</strong></td>
                                   <td><span>0 </span><i class="fa fa-square" aria-hidden="true"></i></td>
                                   <td><strong>6</strong></td>
@@ -1288,15 +1269,17 @@
                                   <td>5</td>
                                 </tr>
                               </tbody>
-                              <tfoot>
-                                <tr>
-                                  <td colspan="2"><i class="fa fa-caret-left" aria-hidden="true"></i></td>
-                                  <td colspan="2"><i class="fa fa-caret-right" aria-hidden="true"></i></td>
-                                </tr>
-                              </tfoot>
                             </table>
                           </div>
                         </div>
+                        <footer class="row">
+                          <div class="col-xs-6 text-center backward">
+                            <i class="fa fa-caret-left" aria-hidden="true"></i>
+                          </div>
+                          <div class="col-xs-6 text-center forward">
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                          </div>
+                        </footer>
                       </div>
                     </div>
                   </div>
