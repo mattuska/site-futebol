@@ -1,0 +1,564 @@
+.statistics {
+  background-color: #c2c5c7;
+  margin-top: 100px;
+  min-width: 1024px;
+}
+
+.statistics .panel-group .panel {
+	margin-bottom: 30px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	border: none;
+}
+
+.statstics .panel-default {
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	border: none;
+}
+
+.statistics .panel-default > .panel-heading {
+	background-color: #ffd807;
+	background-image: none;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	border: 1px solid #fed100;
+}
+.statistics .panel-default > .panel-heading.row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.statistics .panel-title {
+	padding: 6px 0px;
+	font-size: 24px;
+}
+
+.statistics .panel-title a:focus,
+.statistics .panel-title a:hover {
+	text-decoration: none;
+}
+
+.statistics .panel-heading .accordion-toggle:after {
+    font-family: 'Glyphicons Halflings';
+    content: "\e082";
+    float: right;
+}
+
+.statistics .panel-heading .accordion-toggle.collapsed:after {
+    content: "\e081";
+}
+
+.statistics .panel-group .panel-heading+.panel-collapse>.panel-body {
+    border: none;
+}
+
+.statistics .nav-tabs > li, .nav-pills > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+     zoom:1; /* hasLayout ie7 trigger */
+}
+
+.statistics .nav-tabs, .nav-pills {
+    text-align:center;
+}
+
+.statistics .frame-ranking {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.statistics .frame-ranking .title,
+.statistics .tab-elencos .title,
+.statistics .tab-estatisticas .title {
+	border-top: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 23px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.statistics .tab-elencos .title {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.statistics .frame-ranking .title i,
+.statistics .tab-elencos .title i,
+.statistics .tab-estatisticas .title i {
+	color: #ffd807;
+}
+
+.statistics .frame-ranking .title-info,
+.statistics .frame-ranking .title-info.first-line,
+.statistics .tab-elencos .title-info,
+.statistics .tab-estatisticas .title-info {
+    font-size: 10px;
+    text-transform: capitalize;
+    float: right;
+    color: #9E9E9E;
+}
+
+.statistics .frame-ranking .title-info.second-line {
+	position: relative;
+	bottom: 10px
+}
+
+.statistics .frame-ranking .title-info.one-line,
+.statistics .tab-elencos .title-info.one-line,
+.statistics .tab-estatisticas .title-info.one-line {
+    position: relative;
+    top: 7px;
+}
+
+.statistics .tab-elencos .iterator .backward {
+	margin-right: 50px;
+	color: #9e9e9e;
+}
+
+.statistics .tab-elencos .iterator .forward {
+	margin-left: 50px;
+	color: #9e9e9e;
+}
+
+.statistics .tab-elencos .iterator .has-more,
+.statistics .tab-tabela .games .iterator .has-more {
+	color: #64DD17;
+}
+
+.statistics .tab-elencos .iterator span {
+	font-size: 0.7em;
+    font-weight: normal;
+}
+
+.statistics .frame-ranking table thead tr th {
+    font-size: 10px;
+    color: #9E9E9E;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+
+.statistics .frame-ranking .media {
+	margin-top: 0px;
+}
+
+.statistics .frame-ranking table tbody tr td:nth-child(2) {
+    color: #9E9E9E;
+}
+
+.statistics .frame-ranking table tbody tr td:nth-child(2) i {
+    font-size: 10px;
+}
+
+.statistics .frame-ranking table tbody tr td:nth-child(3) {
+    background-color: #F5F5F5;
+}
+
+.statistics .frame-ranking .destaque-jogador td,
+.statistics .tab-elencos table.team .destaque-jogador {
+	background-color: #ffd807;
+	border-color: #fed100;
+}
+
+.statistics .frame-ranking .destaque-jogador + tr td {
+	border-color: #fed100;
+}
+
+.statistics .frame-ranking .destaque-jogador td:nth-child(3) {
+	background-color: #fed100;
+}
+
+.statistics .frame-ranking .media img.media-object,
+.statistics .tab-elencos .frame-player .media img.media-object {
+    width: 150px;
+    margin-left: 5px;
+}
+
+.statistics .panel-rankings-clubes .frame-ranking .media img.media-object {
+    margin-top: 50px;
+}
+
+.statistics .frame-ranking .media-body table {
+	margin-bottom: 5px;
+}
+
+.statistics .frame-ranking .media-footer,
+.statistics .tab-estatisticas footer {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.statistics .frame-ranking .backward,
+.statistics .frame-ranking .forward,
+.statistics .tab-estatisticas footer .backward,
+.statistics .tab-estatisticas footer .forward {
+	border: 1px solid #eeeeee;
+}
+
+.statistics .frame-ranking .backward i,
+.statistics .frame-ranking .forward i,
+.statistics .tab-estatisticas footer .backward i,
+.statistics .tab-estatisticas footer .forward i {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.statistics .frame-ranking .backward:hover,
+.statistics .frame-ranking .forward:hover,
+.statistics .tab-estatisticas footer .backward:hover,
+.statistics .tab-estatisticas footer .forward:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+.statistics .frame-ranking .backward:active,
+.statistics .frame-ranking .forward:active,
+.statistics .tab-estatisticas footer .backward:active,
+.statistics .tab-estatisticas footer .forward:active {
+    background-color: #fafafa;
+}
+
+.statistics .panel-footer {
+	background-color: #ffffff;
+	border-radius: 0px;
+}
+
+.statistics .panel-footer li,
+.statistics .tab-tabela footer li {
+	font-size: 10px;
+    text-transform: uppercase;
+    color: #9e9e9e;
+}
+
+.statistics .tab-tabela footer li {
+    text-transform: lowercase;
+}
+
+.statistics .tab-tabela footer ul {
+    margin-left: 6px;
+}
+
+.statistics .classified,
+.statistics .tab-tabela table.championship .classification.classified {
+	color: #0000ff;
+}
+
+.statistics .rise,
+.statistics .victory {
+	color: #64DD17;
+}
+
+.statistics .drop,
+.statistics .defeat {
+	color: #ff0000;
+}
+
+.statistics .kept,
+.statistics .tie {
+	color: #9e9e9e;
+}
+
+.statistics .panel-dados-gerais .nav-pills li a {
+    width: 80px;
+    height: 60px;
+    font-size: 40px;
+    padding: 2px;
+    background-color: #212121;
+    color: #fff;
+    -webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+
+.statistics .panel-dados-gerais .nav-pills li a:hover {
+	background-color: #212121;
+}
+
+.statistics .panel-dados-gerais .nav-pills li a:active {
+	background-color: #424242;
+}
+
+.statistics .panel-dados-gerais .nav-pills li.active a {
+	background-color: #ffd807;
+}
+
+.statistics .panel-dados-gerais .nav-pills li a.first-tab {
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.statistics .panel-dados-gerais .nav-pills li.first-tab a {
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.statistics .panel-dados-gerais .nav-pills li.last-tab a {
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.statistics .panel-dados-gerais .nav-pills li span {
+	text-transform: uppercase;
+	font-size: 0.7em;
+    font-weight: bold;
+}
+
+.statistics .tab-elencos .frame-player .player-position {
+	font-size: 1em;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #9e9e9e;
+    display: block;
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+
+.statistics .tab-elencos .frame-player .username-psn {
+	font-size: 23px;
+}
+
+ .statistics .tab-elencos .frame-player .criterion {
+ 	font-size: 14px;
+}
+
+.statistics .tab-elencos .frame-player .amount,
+.statistics .tab-elencos .frame-player .featured,
+.statistics .tab-tabela table.championship tbody tr td:nth-child(4),
+.statistics .tab-tabela table.championship tbody tr td:nth-child(6),
+.statistics .tab-tabela table.championship tbody tr td:nth-child(8),
+.statistics .tab-tabela table.championship tbody tr td:nth-child(10),
+.statistics .tab-tabela table.championship tbody tr td:nth-child(12),
+.statistics .tab-estatisticas .amount,
+.statistics .tab-estatisticas .featured {
+	background-color: #f5f5f5;
+}
+
+.statistics .tab-elencos .frame-player .featured,
+.statistics .tab-estatisticas .featured {
+    padding: 5px;
+}
+
+.statistics .tab-elencos table.team {
+	margin-top: 20px;
+}
+
+.statistics .tab-elencos table.team thead,
+.statistics .tab-tabela table.championship thead {
+	text-transform: uppercase;
+    color: #9e9e9e;
+    border-top: 2px solid #e0e0e0;
+    font-size: 10px;
+}
+
+.statistics .tab-elencos table.team thead th,
+.statistics .tab-tabela table.championship thead th,
+.statistics .tab-tabela table.championship tbody td {
+	padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.statistics .tab-elencos table.team tbody tr td {
+	border-top: 1px solid #f5f5f5;
+}
+
+.statistics .tab-elencos table.team .player-position {
+	font-weight: bold;
+	color: #9e9e9e;
+	text-transform: uppercase;
+}
+
+.statistics .tab-elencos table.team .player-name {
+	font-weight: bold;
+}
+
+.statistics .tab-elencos .criterions h5 {
+	font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.statistics .tab-elencos .criterions table tr th,
+.statistics .tab-elencos .criterions table tr td {
+	padding-top: 14px;
+	padding-bottom: 14px;
+}
+
+.statistics .tab-elencos .criterions table .amount {
+	font-weight: bold;
+}
+
+.statistics .tab-tabela table.championship,
+.statistics .tab-tabela .games {
+    margin-top: 30px;
+}
+
+.statistics .tab-tabela table.championship .situation,
+.statistics .tab-tabela table.championship .situation i {
+    font-size: 7px;
+    vertical-align: middle;
+    color: #9e9e9e;
+}
+
+.statistics .tab-tabela table.championship .classification {
+    color: #9e9e9e;
+}
+
+.statistics .tab-tabela table.championship .situation {
+    font-size: 12px;
+}
+
+.statistics .tab-tabela table.championship .ultimos-jogos i {
+    font-size: 7px;
+}
+
+.statistics .tab-tabela .games {
+    margin-left: -15px;
+}
+
+.statistics .tab-tabela .games .iterator {
+    border-top: 2px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.statistics .tab-tabela .games .iterator p {
+    margin: 0px;
+}
+
+.statistics .tab-tabela .games .iterator .backward,
+.statistics .tab-tabela .games .iterator .forward {
+    font-size: 20px;
+}
+
+.statistics .tab-tabela .games .iterator .title p {
+    margin: 0px;
+}
+
+.statistics .tab-tabela .games .list-group-item {
+    border-right: none;
+}
+
+.statistics .tab-tabela .games .list-group-item div:first-child.team-real-madrid {
+    border-left: 3px solid #1565C0;
+}
+
+.statistics .tab-tabela .games .list-group-item div:first-child.team-barcelona {
+    border-left: 3px solid #AD1457;
+}
+
+.statistics .tab-tabela .games .list-group-item div:last-child.team-real-madrid {
+    border-right: 3px solid #1565C0;
+}
+
+.statistics .tab-tabela .games .list-group-item div:last-child.team-barcelona {
+    border-right: 3px solid #AD1457;
+}
+
+.statistics .tab-tabela .games .list-group-item .championship-title,
+.statistics .tab-tabela .games .list-group-item .place,
+.statistics .tab-tabela .games .list-group-item .time {
+    font-size: 7px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #9e9e9e;
+}
+
+.statistics .tab-tabela .games .list-group-item .place {
+    display: block;
+}
+
+.statistics .tab-tabela .games .list-group-item .time {
+    font-size: 10px;
+}
+
+.statistics .tab-tabela .games .list-group-item figure figcaption {
+    font-size: 10px;
+    color: #000000;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.statistics .tab-tabela .games .list-group-item a:hover {
+    text-decoration: none;
+}
+
+.statistics .tab-tabela .games .list-group-item figure {
+    margin-top: 20px;
+}
+
+.statistics .tab-tabela .games .list-group-item figure.stadium {
+    margin-top: 0px;
+}
+
+.statistics .tab-tabela .games .list-group-item .score {
+    position: relative;
+    top: 35px;
+    font-size: 20px;
+}
+
+.statistics .tab-estatisticas .playername {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.statistics .tab-estatisticas .username-psn {
+    display: block;
+    margin-top: -5px;
+    font-size: 16px;
+    color: #9e9e9e;
+}
+
+.statistics .tab-estatisticas .featured .criterion {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.statistics .tab-estatisticas .featured .amount {
+    float: right;
+    margin-right: 36px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.statistics .tab-estatisticas .frames {
+    margin-top: 30px;
+}
+
+.statistics .tab-estatisticas .frame-ranking thead tr {
+    border-top: 2px solid #e0e0e0;
+}
+
+.statistics .tab-estatisticas .frame-ranking thead tr th {
+    padding-top: 15px;
+}
